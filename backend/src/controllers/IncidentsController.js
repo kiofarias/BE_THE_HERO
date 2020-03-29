@@ -36,7 +36,7 @@ module.exports ={
             ,'ongs.uf']
             )
 
-        response.header('X-Total_Count',count['count(*)'])
+        response.header('X-Total-Count',count['count(*)'])
         return response.json(incidents)
     },
     async delete(request,response) {
